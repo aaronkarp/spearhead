@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010 Express for Windows Phone
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spearhead", "Spearhead\Spearhead\Spearhead.csproj", "{CF08CE78-0947-4185-9E25-857B88B0FE5F}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "SpearheadContent", "Spearhead\SpearheadContent\SpearheadContent.contentproj", "{25B82B07-55E3-4950-91F8-4F61868B21BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF08CE78-0947-4185-9E25-857B88B0FE5F}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{CF08CE78-0947-4185-9E25-857B88B0FE5F}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{CF08CE78-0947-4185-9E25-857B88B0FE5F}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{CF08CE78-0947-4185-9E25-857B88B0FE5F}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{CF08CE78-0947-4185-9E25-857B88B0FE5F}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{CF08CE78-0947-4185-9E25-857B88B0FE5F}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{25B82B07-55E3-4950-91F8-4F61868B21BA}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{25B82B07-55E3-4950-91F8-4F61868B21BA}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

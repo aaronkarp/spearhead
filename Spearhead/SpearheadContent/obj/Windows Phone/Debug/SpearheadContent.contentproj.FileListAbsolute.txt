@@ -1,0 +1,3 @@
+f:\my documents\visual studio 2010\Projects\Spearhead\Spearhead\SpearheadContent\obj\Windows Phone\Debug\ResolveAssemblyReference.cache
+C:\Users\Aaron Karp\SkyDrive\Spearhead\Spearhead\SpearheadContent\obj\Windows Phone\Debug\ResolveAssemblyReference.cache
+C:\Users\Aaron\SkyDrive\Spearhead\Spearhead\SpearheadContent\obj\Windows Phone\Debug\SpearheadContent.contentprojResolveAssemblyReference.cache

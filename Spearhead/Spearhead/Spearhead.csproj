@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{CF08CE78-0947-4185-9E25-857B88B0FE5F}</ProjectGuid>
+    <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">Windows Phone</Platform>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Spearhead</RootNamespace>
+    <AssemblyName>Spearhead</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <XnaPlatform>Windows Phone</XnaPlatform>
+    <XnaProfile>Reach</XnaProfile>
+    <XnaCrossPlatformGroupID>786a4e1a-f7a5-4943-9202-ff05794daf2d</XnaCrossPlatformGroupID>
+    <XnaOutputType>Game</XnaOutputType>
+    <XnaRefreshLevel>1</XnaRefreshLevel>
+    <WPTombstoneEnabled>false</WPTombstoneEnabled>
+    <XapFilename>$(AssemblyName).xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <XnaWindowsPhoneManifestTemplate>Properties\WMAppManifest.xml</XnaWindowsPhoneManifestTemplate>
+    <TileImage>Background.png</TileImage>
+    <TileTitle>Spearhead</TileTitle>
+    <SupportedCultures>
+    </SupportedCultures>
+    <ApplicationIcon>Game.ico</ApplicationIcon>
+    <Thumbnail>PhoneGameThumb.png</Thumbnail>
+    <GameStartupType>Spearhead.SpearheadGame</GameStartupType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|Windows Phone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Windows Phone\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS_PHONE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <XnaCompressContent>false</XnaCompressContent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Windows Phone' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Windows Phone\Release</OutputPath>
+    <DefineConstants>TRACE;WINDOWS_PHONE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <XnaCompressContent>false</XnaCompressContent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Phone, Version=7.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xna.Framework" />
+    <Reference Include="Microsoft.Xna.Framework.Game" />
+    <Reference Include="Microsoft.Xna.Framework.Graphics" />
+    <Reference Include="Microsoft.Xna.Framework.GamerServices" />
+    <Reference Include="Microsoft.Xna.Framework.Input.Touch" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Windows, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Net" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Behaviors\SweepHold.cs" />
+    <Compile Include="Behaviors\SweepDown.cs" />
+    <Compile Include="Behaviors\Formation.cs" />
+    <Compile Include="Behaviors\SweepUp.cs" />
+    <Compile Include="Behaviors\Wedge.cs" />
+    <Compile Include="Behaviors\Zigzag.cs" />
+    <Compile Include="Bosses\Level1Boss.cs" />
+    <Compile Include="Bosses\Level2Boss.cs" />
+    <Compile Include="Bosses\Level3Boss.cs" />
+    <Compile Include="Bosses\Level4Boss.cs" />
+    <Compile Include="Bosses\Level5Boss.cs" />
+    <Compile Include="Levels\Ending.cs" />
+    <Compile Include="Levels\Level1_2.cs" />
+    <Compile Include="Levels\Level1_1.cs" />
+    <Compile Include="Levels\Level1_3.cs" />
+    <Compile Include="Levels\Level2_1.cs" />
+    <Compile Include="Levels\Level2_2.cs" />
+    <Compile Include="Levels\Level2_3.cs" />
+    <Compile Include="Levels\Level3_1.cs" />
+    <Compile Include="Levels\Level3_2.cs" />
+    <Compile Include="Levels\Level3_3.cs" />
+    <Compile Include="Levels\Level4_1.cs" />
+    <Compile Include="Levels\Level4_2.cs" />
+    <Compile Include="Levels\Level4_3.cs" />
+    <Compile Include="Levels\Level5_1.cs" />
+    <Compile Include="Levels\Level5_2.cs" />
+    <Compile Include="Levels\Level5_3.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scoring\Bonus.cs" />
+    <Compile Include="Screens\GameOver.cs" />
+    <Compile Include="Screens\OptionsScreen.cs" />
+    <Compile Include="Screens\Splash.cs" />
+    <Compile Include="Screens\TrialModeScreen.cs" />
+    <Compile Include="Sprites\Animation.cs" />
+    <Compile Include="Sprites\Aphid.cs" />
+    <Compile Include="Bosses\Boss.cs" />
+    <Compile Include="Sprites\AssaultDrone.cs" />
+    <Compile Include="Sprites\Blades.cs" />
+    <Compile Include="Sprites\CenterFuselage.cs" />
+    <Compile Include="Sprites\Component.cs" />
+    <Compile Include="Sprites\DualGunPod.cs" />
+    <Compile Include="Sprites\ElectricalField.cs" />
+    <Compile Include="Sprites\ScrollText.cs" />
+    <Compile Include="Sprites\Fuselage.cs" />
+    <Compile Include="Sprites\HealthPowerup.cs" />
+    <Compile Include="Sprites\Jaw.cs" />
+    <Compile Include="Sprites\LeftArm.cs" />
+    <Compile Include="Sprites\LeftEye.cs" />
+    <Compile Include="Sprites\LeftMissileDoor.cs" />
+    <Compile Include="Sprites\LeftMissiles.cs" />
+    <Compile Include="Sprites\LeftRail.cs" />
+    <Compile Include="Sprites\LeftThrusterPod.cs" />
+    <Compile Include="Sprites\LeftTurret.cs" />
+    <Compile Include="Sprites\LeftWing.cs" />
+    <Compile Include="Sprites\MissilePod.cs" />
+    <Compile Include="Sprites\MissilePodDoor.cs" />
+    <Compile Include="Sprites\MissilePodFull.cs" />
+    <Compile Include="Sprites\MissilePowerup.cs" />
+    <Compile Include="Sprites\ParticleTurretWithBase.cs" />
+    <Compile Include="Sprites\RightArm.cs" />
+    <Compile Include="Sprites\RightEye.cs" />
+    <Compile Include="Sprites\RightMissileDoor.cs" />
+    <Compile Include="Sprites\RightMissiles.cs" />
+    <Compile Include="Sprites\RightRail.cs" />
+    <Compile Include="Sprites\RightThrusterPod.cs" />
+    <Compile Include="Sprites\RightTurret.cs" />
+    <Compile Include="Sprites\RightWing.cs" />
+    <Compile Include="Sprites\Satellite.cs" />
+    <Compile Include="Sprites\Shield.cs" />
+    <Compile Include="Sprites\ShieldPowerup.cs" />
+    <Compile Include="Sprites\Enemy.cs" />
+    <Compile Include="Sprites\GatlingPowerup.cs" />
+    <Compile Include="Sprites\GetReady.cs" />
+    <Compile Include="Sprites\Hawk.cs" />
+    <Compile Include="Sprites\Hud.cs" />
+    <Compile Include="Sprites\LaserPowerup.cs" />
+    <Compile Include="Sprites\LevelComplete.cs" />
+    <Compile Include="Sprites\PlayerShip.cs" />
+    <Compile Include="Sprites\Powerup.cs" />
+    <Compile Include="Sprites\PowerupCarrier.cs" />
+    <Compile Include="Sprites\Projectile.cs" />
+    <Compile Include="Sprites\Rhino.cs" />
+    <Compile Include="Sprites\ScrollingBackground.cs" />
+    <Compile Include="Sprites\SideScrollingBackground.cs" />
+    <Compile Include="Sprites\Skull.cs" />
+    <Compile Include="Sprites\Sprite.cs" />
+    <Compile Include="Sprites\Wing.cs" />
+    <Compile Include="Texts\Text.cs" />
+    <None Include="Properties\AppManifest.xml">
+      <XnaPlatformSpecific>true</XnaPlatformSpecific>
+    </None>
+    <None Include="Properties\WMAppManifest.xml">
+      <XnaPlatformSpecific>true</XnaPlatformSpecific>
+      <SubType>Designer</SubType>
+    </None>
+    <Compile Include="ScreenManager\GameScreen.cs" />
+    <Compile Include="ScreenManager\InputAction.cs" />
+    <Compile Include="ScreenManager\IScreenFactory.cs" />
+    <Compile Include="ScreenManager\ScreenFactory.cs" />
+    <Compile Include="ScreenManager\ScreenManager.cs" />
+    <Compile Include="Screens\BackgroundScreen.cs" />
+    <Compile Include="Screens\Button.cs" />
+    <Compile Include="Screens\GameplayScreen.cs" />
+    <Compile Include="Screens\LoadingScreen.cs" />
+    <Compile Include="Screens\PhoneMainMenuScreen.cs" />
+    <Compile Include="Screens\PhoneMenuScreen.cs" />
+    <Compile Include="Screens\PhonePauseScreen.cs" />
+    <Compile Include="Spearhead.cs" />
+    <Compile Include="ScreenManager\InputState.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Game.ico" />
+    <Content Include="marketplaceicon.png" />
+    <Content Include="PhoneGameThumb.png">
+      <XnaPlatformSpecific>true</XnaPlatformSpecific>
+    </Content>
+    <Content Include="Background.png">
+      <XnaPlatformSpecific>true</XnaPlatformSpecific>
+    </Content>
+    <Content Include="smallapplicationtile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SpearheadContent\SpearheadContent.contentproj">
+      <Name>SpearheadContent</Name>
+      <XnaReferenceType>Content</XnaReferenceType>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
+  <!--
+      To modify your build process, add your task inside one of the targets below and uncomment it. 
+      Other similar extension points exist, see Microsoft.Common.targets.
+      <Target Name="BeforeBuild">
+      </Target>
+      <Target Name="AfterBuild">
+      </Target>
+    -->
+</Project>
